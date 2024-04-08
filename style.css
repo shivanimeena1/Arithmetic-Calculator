@@ -1,0 +1,136 @@
+body {
+  background-image: url(image/bg5.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  left: 320px;
+  top: 40px;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 0 0 25px #00fffb, 0 0 40px #0081bc;
+  position: relative;
+  animation: title 1s linear;
+}
+
+@keyframes title {
+  0% {
+    transform: translatex(-20px) rotate(60deg);
+  }
+}
+
+/*For underline animation*/
+h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: white;
+}
+
+h1:hover::after {
+  width: 100%;
+}
+
+.operator {
+  position: absolute;
+  top: 100px;
+  right: 1200px;
+  color: white;
+  font-size: 100px;
+  opacity: 0.1;
+  animation: operator 1s linear;
+}
+
+@keyframes operator {
+  0% {
+    transform: translatex(-200px);
+  }
+}
+
+.plus {
+  position: relative;
+  right: 120px;
+}
+
+
+.sub {
+  position: relative;
+  left: 120px;
+  top: 20px;
+}
+
+.mult {
+  position: relative;
+  right: 150px;
+}
+
+.divide {
+  position: relative;
+  left: 50px;
+
+}
+
+.calculator {
+  background-color: black;
+  height: 480px;
+  width: 350px;
+  padding: 25px;
+  border-radius: 20px;
+  position: absolute;
+  top: 200px;
+  left: 520px;
+  padding-right: 20px;
+  padding-top: 10px;
+  animation: calculator 1s linear;
+}
+
+@keyframes calculator {
+  0% {
+    transform: translatex(600px);
+  }
+}
+
+.button {
+  border: 0;
+  outline: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 30%;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+  box-shadow: 2px 2px 8px white;
+  position: relative;
+  margin: 7px;
+  font-weight: bold;
+}
+
+.display {
+  display: flex;
+}
+
+.display input {
+  width: 300px;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.num {
+  color: rgba(0, 255, 242, 0.78);
+}
+
+.equal {
+  background: hwb(20 7% 3%);
+  font-weight: bold;
+  padding-left: 55px;
+  padding-right: 70px;
+}
